@@ -1,0 +1,28 @@
+mat-card {
+  max-width: 600px;
+  margin: 150px auto;
+  text-align: center;
+}
+
+h2 {
+  margin-left: 1em;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-right: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+select {
+  background-color: black;
+  color: aliceblue;
+  padding: 8px 0;
+  font-size: medium;
+}

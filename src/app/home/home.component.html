@@ -1,0 +1,25 @@
+<main>
+  <h2>i18n-App</h2>
+  <div class="top">
+    <label for="langs">{{ "HOME.Select" | translate }}</label>
+    <select id="langs" #langselect (change)="translate.use(langselect.value)">
+      <option *ngFor="let lang of translate.getLangs()" [value]="lang">
+        {{ lang.toUpperCase() }}
+        <span *ngIf="lang == 'en'">English</span>
+        <span *ngIf="lang == 'de'">German</span>
+        <span *ngIf="lang == 'fr'">french</span>
+        <span *ngIf="lang == 'el'">Greek</span>
+        <span *ngIf="lang == 'es'">Spanish</span>
+      </option>
+    </select>
+  </div>
+  <section>
+    <mat-card>
+      <h2>{{ "HOME.Header" | translate }}</h2>
+
+      <p>
+        {{ "HOME.Content" | translate }}
+      </p>
+    </mat-card>
+  </section>
+</main>

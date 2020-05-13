@@ -1,0 +1,7 @@
+{
+  "HOME": {
+    "Header": "Translation Page",
+    "Content": "This page was built to display 5 local languages using ngx-translate, select your preferred language from the above options",
+    "Select": "Select Language"
+  }
+}
